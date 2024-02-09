@@ -11,6 +11,12 @@
     right: 10%;
     width: 30%;
     height: auto;
-    background-color: whitesmoke;
+    background-color: rgb(159, 121, 121);
     z-index: 1001;
+   
+}
+.bg-body-tertiary {
+    --bs-bg-opacity: 1;
+  background-color: rgb(175, 115, 183);
+
 }
