@@ -155,3 +155,22 @@ const restarCantidad = (id) => {
 
 
 }
+boton.addEventListener("click", () => {
+   Swal.fire({
+    title: "Está seguro de eliminar el producto?",
+    icon: "warning",
+  showCancelButton: true,
+   confirmButtonText: "Sí, seguro",
+     cancelButtonText: "No, no quiero",
+     }).then((result) => {
+     if (result.isConfirmed) {
+      //lógica a ejecutar
+  localStorage.removeItem("carrito");
+    Swal.fire({
+     title: "Borrado!",
+    icon: "success",
+   text: "El archivo ha sido borrado",
+   });
+    }
+   });
+   });
